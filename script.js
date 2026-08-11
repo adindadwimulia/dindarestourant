@@ -1,17 +1,38 @@
-const reveal=document.querySelectorAll(".reveal");
+const revealItems = document.querySelectorAll('.reveal');
 
-window.addEventListener("scroll",()=>{
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
-reveal.forEach(item=>{
+revealItems.forEach(item => observer.observe(item));
 
-const top=item.getBoundingClientRect().top;
+const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-if(top<window.innerHeight-100){
-
-item.classList.add("active");
-
-}
-
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
 });
 
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+const form = document.getElementById('reservationForm');
+const message = document.getElementById('formMessage');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const date = document.getElementById('date').value;
+  const guests = document.getElementById('guests').value;
+
+  if (!name || !date || !guests) return;
+
+  message.textContent = `Terima kasih, ${name}! Permintaan reservasi untuk ${guests} pada ${date} sudah dicatat.`;
+  form.reset();
 });

@@ -1,185 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dinda Restaurant</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@700&display=swap"
-rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinda Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<nav>
-
-<div class="logo">
-Dinda Restaurant
-</div>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Menu</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Reservation</a></li>
-
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>Luxury Dining Experience</h1>
-
-<p>
-Taste Every Moment With Elegance
-</p>
-
-<button>Reserve Table</button>
-
-</div>
-
-</section>
-
-<section class="about reveal">
-
-<div class="text">
-
-<h2>About Us</h2>
-
-<p>
-
-Dinda Restaurant menghadirkan pengalaman makan premium dengan cita rasa
-nusantara dan internasional yang dipadukan dengan interior modern,
-mewah, dan pelayanan terbaik.
-
-</p>
-
-</div>
-
-<div class="image">
-
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div>
-
-<h2>10+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-<div>
-
-<h2>5000+</h2>
-
-<p>Happy Customers</p>
-
-</div>
-
-<div>
-
-<h2>50+</h2>
-
-<p>Luxury Menu</p>
-
-</div>
-
-</section>
-
-<section class="menu reveal">
-
-<h2>Popular Menu</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-
-<h3>Signature Burger</h3>
-
-<p>Rp85.000</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
-
-<h3>Premium Steak</h3>
-
-<p>Rp250.000</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
-
-<h3>Italian Pizza</h3>
-
-<p>Rp150.000</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="testimonial reveal">
-
-<h2>Customer Reviews</h2>
-
-<p>
-
-★★★★★
-
-<br><br>
-
-"The best luxury restaurant in town!"
-
-</p>
-
-</section>
-
-<section class="cta">
-
-<h2>
-
-Reserve Your Luxury Experience
-
-</h2>
-
-<button>Book Now</button>
-
-</section>
-
-<footer>
-
-© 2026 Dinda Restaurant
-
-</footer>
-
-<script src="script.js"></script>
-
+  <nav class="navbar">
+    <a href="#" class="logo">Dinda<span>.</span></a>
+    <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#reservation">Reservation</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">WELCOME TO DINDA RESTAURANT</p>
+        <h1>Where Taste Meets <em>Elegance.</em></h1>
+        <p class="hero-text">Nikmati pengalaman kuliner istimewa dengan cita rasa yang berkelas, suasana hangat, dan sentuhan modern.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reservation">Reserve a Table</a>
+          <a class="btn btn-outline" href="#menu">Explore Menu</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">SCROLL <span>↓</span></div>
+    </section>
+
+    <section id="about" class="about section reveal">
+      <div class="section-image">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Interior Dinda Restaurant">
+        <div class="image-badge"><strong>10+</strong><span>Years of<br>Experience</span></div>
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>A Place Made<br>for <em>Beautiful Moments.</em></h2>
+        <p>Dinda Restaurant hadir untuk menyatukan rasa, suasana, dan momen. Setiap hidangan dibuat dengan bahan pilihan dan perhatian pada detail.</p>
+        <p>Kami percaya bahwa makan bukan sekadar menikmati makanan, tetapi menciptakan kenangan yang ingin kamu ulangi.</p>
+        <a href="#menu" class="text-link">Discover our story <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SIGNATURE SELECTION</p>
+        <h2>Our <em>Favorites</em></h2>
+        <p>Beberapa hidangan pilihan yang menjadi favorit para tamu Dinda Restaurant.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=85" alt="Premium Steak">
+          <div class="menu-info"><span>01</span><h3>Premium Steak</h3><p>Grilled premium beef, herb butter & seasonal vegetables.</p><strong>Rp 185K</strong></div>
+        </article>
+        <article class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85" alt="Signature Pizza">
+          <div class="menu-info"><span>02</span><h3>Signature Pizza</h3><p>Handcrafted dough, mozzarella, tomato & fresh herbs.</p><strong>Rp 125K</strong></div>
+        </article>
+        <article class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85" alt="Golden Dessert">
+          <div class="menu-info"><span>03</span><h3>Golden Dessert</h3><p>Silky cream, caramel, chocolate & a touch of gold.</p><strong>Rp 75K</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="experience-overlay"></div>
+      <div class="experience-content reveal">
+        <p class="eyebrow">THE DINDA EXPERIENCE</p>
+        <h2>Every Detail<br><em>Matters.</em></h2>
+        <p>Dari pencahayaan hingga plating, kami merancang setiap detail untuk membuat kunjunganmu terasa spesial.</p>
+        <a class="btn btn-primary" href="#reservation">Make a Reservation</a>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation section reveal">
+      <div>
+        <p class="eyebrow">YOUR TABLE AWAITS</p>
+        <h2>Make It a<br><em>Moment.</em></h2>
+      </div>
+      <form id="reservationForm">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="date" id="date" required>
+        <select id="guests" required>
+          <option value="">Number of guests</option>
+          <option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Request Reservation</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Dinda<span>.</span></div>
+    <p>Fine dining, beautiful moments.</p>
+    <small>© 2026 Dinda Restaurant. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
